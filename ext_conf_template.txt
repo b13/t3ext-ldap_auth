@@ -1,0 +1,14 @@
+  # cat=basic/enable; type=boolean; label=Plain text passwords: To make BE LDAP support work the login method needs to be changed to "normal" to submit passwords in plain text. This is a security risc and should be combined with SSL (https)!
+plainTextLoginBE = 0
+  # cat=basic/enable; type=boolean; label=Backend: Enable LDAP for backend.
+enableBE = 0
+  # cat=basic/enable; type=boolean; label=Frontend: Enable LDAP for frontend.
+enableFE = 0
+  # cat=basic/enable; type=boolean; label=Frontend: If this is enabled the service will always be called if there is no valid user session (Needed for singleSignOn). If not then the service will only be called if the authentification process sees incoming data from a form.
+FE_fetchUserIfNoSession = 0
+  # cat=basic/enable; type=boolean; label=Backend: If this is enabled the service will always be called if there is no valid user session (Needed for singleSignOn). If not then the service will only be called if the authentification process sees incoming data from a form.
+BE_fetchUserIfNoSession = 0
+  # cat=basic/enable; type=boolean; label=Frontend: Don't stop when service finds a user. Let other services find additional users.
+FE_alwaysFetchUser = 0
+  # cat=basic/enable; type=boolean; label=Backend: Don't stop when service finds a user. Let other services find additional users.
+BE_alwaysFetchUser = 0
