@@ -44,8 +44,8 @@ if ($TYPO3_CONF_VARS['EXTCONF']['ldap_auth']['setup']['enableFE'] && $TYPO3_CONF
 		'subtype' => $subTypes,
 		
 		'available' => TRUE,
-		'priority' => 60,
-		'quality' => 60,
+		'priority' => 80,
+		'quality' => 80,
 
 		'os' => '',
 		'exec' => '',
